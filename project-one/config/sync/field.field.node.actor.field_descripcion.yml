@@ -1,0 +1,21 @@
+uuid: 118b1539-bfb8-4f93-b786-1319a6d35b88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_descripcion
+    - node.type.actor
+  module:
+    - text
+id: node.actor.field_descripcion
+field_name: field_descripcion
+entity_type: node
+bundle: actor
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,9 @@
+uuid: 7eb70542-8d8e-4dcd-af6a-44e9ba790c12
+langcode: en
+status: true
+dependencies: {  }
+name: Categorías
+vid: categorias
+description: 'Son las categorías o géneros de las películas'
+hierarchy: 0
+weight: 0

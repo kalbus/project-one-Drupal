@@ -1,0 +1,22 @@
+uuid: a88be8aa-0de1-45c4-8691-8c2b8d7e2a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuerpo
+    - node.type.articulo
+  module:
+    - text
+id: node.articulo.field_cuerpo
+field_name: field_cuerpo
+entity_type: node
+bundle: articulo
+label: Cuerpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

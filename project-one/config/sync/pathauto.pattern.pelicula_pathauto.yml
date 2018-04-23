@@ -1,0 +1,22 @@
+uuid: f60a69a8-0494-4394-81e7-a5b59be0774b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pelicula_pathauto
+label: 'Película pathauto'
+type: 'canonical_entities:node'
+pattern: '/pelicula/[node:title]'
+selection_criteria:
+  b88c2e23-db09-4b4c-9c73-f1af96e4330a:
+    id: node_type
+    bundles:
+      pelicula: pelicula
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b88c2e23-db09-4b4c-9c73-f1af96e4330a
+selection_logic: and
+weight: -5
+relationships: {  }

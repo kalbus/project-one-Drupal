@@ -1,0 +1,22 @@
+uuid: 7409c803-7c80-45b3-a405-cccc9b933507
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: director_pathauto
+label: 'Director pathauto'
+type: 'canonical_entities:node'
+pattern: '/director/[node:title]'
+selection_criteria:
+  45da5055-8015-441a-9008-f21bcc69590a:
+    id: node_type
+    bundles:
+      director: director
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 45da5055-8015-441a-9008-f21bcc69590a
+selection_logic: and
+weight: -5
+relationships: {  }

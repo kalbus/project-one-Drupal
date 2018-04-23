@@ -1,0 +1,20 @@
+uuid: 843141d3-6b42-4c57-8110-0da568a5d599
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actor.field_descripcion
+    - node.type.actor
+  module:
+    - user
+id: node.actor.teaser
+targetEntityType: node
+bundle: actor
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_descripcion: true

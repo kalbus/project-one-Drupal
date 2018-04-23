@@ -1,0 +1,29 @@
+uuid: 787e4cf4-7cc9-4635-b5da-70f0d9d473ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clasificacion
+    - node.type.articulo
+    - taxonomy.vocabulary.clasificacion
+id: node.articulo.field_clasificacion
+field_name: field_clasificacion
+entity_type: node
+bundle: articulo
+label: Clasificación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      clasificacion: clasificacion
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,46 @@
+uuid: d05c0786-4d8c-457d-bb2b-1111c8cf04c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.director.field_des
+    - field.field.node.director.field_peliculas
+    - field.field.node.director.field_port
+    - node.type.director
+  module:
+    - image
+    - text
+    - user
+id: node.director.default
+targetEntityType: node
+bundle: director
+mode: default
+content:
+  field_des:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_peliculas:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_port:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
