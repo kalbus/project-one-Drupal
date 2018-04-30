@@ -1,0 +1,30 @@
+uuid: f36cbc1f-0f8c-494c-a85e-0cabe6be16a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.peliculas_destacada
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__peliculas_destacada_block_1
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:peliculas_destacada-block_1'
+settings:
+  id: 'views_block:peliculas_destacada-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /home
+    negate: false
+    context_mapping: {  }

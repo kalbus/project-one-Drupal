@@ -1,0 +1,21 @@
+uuid: f447a333-4001-482a-a4b8-7b3f16e3d83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.pelicula
+  module:
+    - datetime
+id: node.pelicula.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: pelicula
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

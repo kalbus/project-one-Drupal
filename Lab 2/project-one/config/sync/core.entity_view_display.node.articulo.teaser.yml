@@ -1,0 +1,20 @@
+uuid: f3dba54f-c492-4774-a63b-e16707508954
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo.field_cuerpo
+    - node.type.articulo
+  module:
+    - user
+id: node.articulo.teaser
+targetEntityType: node
+bundle: articulo
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_cuerpo: true

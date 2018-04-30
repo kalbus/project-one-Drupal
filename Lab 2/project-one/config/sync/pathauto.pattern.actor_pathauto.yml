@@ -1,0 +1,22 @@
+uuid: 7ed002a1-096e-491c-a490-21b6c853f0cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: actor_pathauto
+label: 'Actor pathauto'
+type: 'canonical_entities:node'
+pattern: '/actor/[node:title]'
+selection_criteria:
+  cbf4ae59-0063-44dd-8604-849a70b0d45a:
+    id: node_type
+    bundles:
+      actor: actor
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cbf4ae59-0063-44dd-8604-849a70b0d45a
+selection_logic: and
+weight: -5
+relationships: {  }
