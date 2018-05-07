@@ -1,0 +1,42 @@
+uuid: 43f89190-1835-4eec-bbf2-e27e694f276b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pelicula.field_categorias
+    - field.field.node.pelicula.field_dir
+    - field.field.node.pelicula.field_fecha
+    - field.field.node.pelicula.field_portada
+    - field.field.node.pelicula.field_puntuacion
+    - field.field.node.pelicula.field_reparto
+    - image.style.full_image
+    - node.type.pelicula
+  module:
+    - image
+    - user
+id: node.pelicula.teaser
+targetEntityType: node
+bundle: pelicula
+mode: teaser
+content:
+  field_portada:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: full_image
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_categorias: true
+  field_dir: true
+  field_fecha: true
+  field_puntuacion: true
+  field_reparto: true

@@ -1,0 +1,10 @@
+uuid: cba45286-2c27-4131-8db5-e39672ea46af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_movies
+label: Featured
+targetEntityType: node
+cache: true

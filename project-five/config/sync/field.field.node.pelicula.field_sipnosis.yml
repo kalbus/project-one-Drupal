@@ -1,0 +1,21 @@
+uuid: a5609705-218e-404d-ba8e-12e918a31a1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sipnosis
+    - node.type.pelicula
+  module:
+    - text
+id: node.pelicula.field_sipnosis
+field_name: field_sipnosis
+entity_type: node
+bundle: pelicula
+label: Sipnosis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

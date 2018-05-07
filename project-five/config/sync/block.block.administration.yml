@@ -1,0 +1,24 @@
+uuid: ccd40eb5-0c3e-464d-b196-c290629afa0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - bartik
+id: administration
+theme: bartik
+region: sidebar_second
+weight: -5
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
