@@ -1,0 +1,21 @@
+uuid: c2bfc5f7-d96a-4199-be78-186cd5b4ad8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_des
+    - node.type.director
+  module:
+    - text
+id: node.director.field_des
+field_name: field_des
+entity_type: node
+bundle: director
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

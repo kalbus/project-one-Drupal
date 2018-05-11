@@ -1,0 +1,33 @@
+uuid: 5d6cc570-bc12-4caf-abb2-4a7c84ba1f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.peliculas_relacionadas
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__peliculas_relacionadas_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:peliculas_relacionadas-block_1'
+settings:
+  id: 'views_block:peliculas_relacionadas-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pelicula: pelicula
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

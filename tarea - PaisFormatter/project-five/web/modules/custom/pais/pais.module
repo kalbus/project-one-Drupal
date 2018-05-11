@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains pais.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pais_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pais module.
+    case 'help.page.pais':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pais_theme() {
+  return [
+    'pais' => [
+      'render element' => 'children',
+    ],
+  ];
+}

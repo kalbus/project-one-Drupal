@@ -1,0 +1,18 @@
+uuid: 38d80ee6-c1d5-48ad-8311-ca2488a9af1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Actor
+type: actor
+description: 'Nombre del actor o actriz'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

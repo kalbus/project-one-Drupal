@@ -1,0 +1,28 @@
+uuid: 379a382f-e2b5-4903-8980-21d546467a17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dir
+    - node.type.director
+    - node.type.pelicula
+id: node.pelicula.field_dir
+field_name: field_dir
+entity_type: node
+bundle: pelicula
+label: Dirección
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      director: director
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
